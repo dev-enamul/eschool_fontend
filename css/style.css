@@ -1,0 +1,366 @@
+/* common */
+:root {
+  --background: #fff;
+  --text: #676767;
+  --mark: #e91e63;
+  --background_2: #000;
+  --background_3: #f1f1f1;
+}
+.section_title {
+  font-size: 30px;
+  color: #333;
+  line-height: 52px;
+  font-weight: 700;
+  padding-bottom: 15px;
+
+  text-align: center;
+  position: relative;
+}
+.section_title::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 70px;
+  margin-left: -90px;
+  bottom: 40px;
+  background-color: #e91e63;
+}
+.section_title::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 70px;
+  margin-left: 20px;
+  bottom: 40px;
+  background-color: #e91e63;
+}
+
+/* topbar */
+.topbar {
+  background: var(--background_2);
+  font-size: 13px;
+}
+
+/* top contact */
+.top_contact {
+  display: flex;
+  padding: 5px;
+  margin: 0px;
+  padding: 0px;
+  font-family: open sans, sans-serif;
+  color: var(--background);
+}
+.top_contact li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  list-style: none;
+}
+
+/* top right */
+.top-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* social icon */
+.social_icon {
+  display: flex;
+  padding: 5px;
+  margin: 0px;
+  padding: 0px;
+  font-family: open sans, sans-serif;
+  color: var(--background);
+}
+.social_icon li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  list-style: none;
+}
+
+/* Menu */
+nav {
+  padding: 15px 0px;
+  position: sticky;
+  top: -1px;
+  background: var(--background);
+  box-shadow: 0px -12.5px 18px;
+  z-index: 5;
+}
+.navbar {
+  padding: 0px;
+}
+.logo {
+  flex-basis: 10%;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  font-size: 14px;
+  color: var(--text);
+  padding: 10px 17px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 35px;
+  background: 0 0;
+  font-weight: 400;
+  transition: 0.1s;
+}
+.menu li a:hover {
+  text-decoration: none;
+  background: var(--mark);
+  color: var(--background);
+}
+
+/* Account */
+
+.account a {
+  font-size: 14px;
+  color: var(--background);
+  padding: 10px 17px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 35px;
+  background: 0 0;
+  font-weight: 400;
+  transition: 0.5s;
+  background: var(--mark);
+}
+
+/* Home */
+#home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url(../images/c2.jpg);
+  width: 100%;
+  min-height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+#home h2 {
+  color: var(--background);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+#home p {
+  color: var(--background);
+  width: 50%;
+  font-size: 0.9rem;
+  line-height: 25px;
+  text-align: center;
+}
+#home a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 28px;
+  background-color: var(--background);
+  font-weight: 600;
+  border-radius: 5px;
+}
+#home a:first-child {
+  color: var(--background);
+  background: var(--mark);
+}
+#home a:first-child:hover {
+  background: var(--background_2);
+}
+#home a:last-child {
+  color: var(--background);
+  background: var(--background_2);
+}
+#home a:last-child:hover {
+  color: var(--background);
+  background: var(--mark);
+}
+
+/* Feature */
+#feature {
+  margin-top: 20px;
+}
+#feature .fea-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  font-family: Barlow, "baloo da 2", sans-serif;
+  border: 1px solid var(--background_3);
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+#feature .fea-box:hover {
+  border: 1px solid var(--mark);
+}
+#feature .fea-box i {
+  font-size: 2.3rem;
+
+  padding: 14px;
+  background: rgb(233 30 99 / 11%);
+  border-radius: 50%;
+  color: var(--mark);
+}
+#feature .fea-box h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--background_2);
+  padding: 13px 0 7px 0;
+  margin-bottom: 0.5rem;
+}
+#feature .fea-box p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--text);
+}
+
+/* Courses */
+#course {
+  background: var(--background_3);
+  padding-top: 20px;
+  text-align: center;
+}
+.course_box {
+  text-align: start;
+  background: var(--background);
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+.course_box:hover {
+  box-shadow: 0 13px 21px rgb(0 0 0 / 13%);
+  margin-top: -5px;
+}
+.course_box img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+.course_box .details {
+  padding: 15px;
+  position: relative;
+}
+.course_box .details > span {
+  font-size: 0.7rem;
+  color: var(--text);
+}
+.course_box .details i {
+  color: var(--mark);
+  font-size: 0.9rem;
+}
+.course_box .cost {
+  background: var(--mark);
+  color: var(--background);
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: -33px;
+}
+
+/* Expert */
+#expert {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+#expert .profile {
+  text-align: center;
+}
+#expert .profile h6 {
+  color: var(--background_2);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+#expert .profile i {
+  padding: 10px;
+  border: 1px solid var(--background_3);
+  color: var(--text);
+  border-radius: 3px;
+  transform: 0.2s;
+}
+#expert .profile i:hover {
+  background: var(--mark);
+  color: var(--background);
+}
+
+/* footer */
+
+footer {
+  background: var(--background_2);
+  color: var(--text);
+  padding: 40px 0px;
+}
+
+.footer_about img {
+  margin-bottom: 20px;
+}
+.footer_about p {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer_social ul {
+  padding-left: 0px;
+}
+
+.footer_social ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 3px;
+}
+.footer_social ul li a {
+  padding: 7px;
+  background: var(--mark);
+  color: var(--background);
+  border-radius: 3px;
+}
+footer h3 {
+  font-size: 1.2rem;
+  color: var(--background);
+  margin-bottom: 20px;
+}
+
+.footer ul li a {
+  color: var(--text);
+  font-weight: 700;
+}
+.footer_link {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer_link li {
+  margin-bottom: 7px;
+}
+.footer_link a {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+.footer_link a:hover {
+  text-decoration: none;
+  color: var(--mark);
+}
