@@ -41,6 +41,12 @@
   font-size: 13px;
 }
 
+@media only screen and (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+}
+
 /* top contact */
 .top_contact {
   display: flex;
@@ -102,6 +108,13 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    margin-top: 15px;
+  }
 }
 .menu li {
   list-style: none;
@@ -119,7 +132,14 @@ nav {
 }
 .menu li a:hover {
   text-decoration: none;
+  color: var(--mark);
+}
+
+.menu li .active {
   background: var(--mark);
+  color: var(--background);
+}
+.menu li .active:hover {
   color: var(--background);
 }
 
@@ -136,6 +156,13 @@ nav {
   font-weight: 400;
   transition: 0.5s;
   background: var(--mark);
+}
+@media only screen and (max-width: 768px) {
+  .account {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+  }
 }
 
 /* Home */
@@ -158,6 +185,7 @@ nav {
   font-size: 2.2rem;
   letter-spacing: 1px;
   font-weight: 700;
+  text-align: center;
 }
 #home p {
   color: var(--background);
@@ -166,6 +194,12 @@ nav {
   line-height: 25px;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  #home p {
+    width: 90%;
+  }
+}
+
 #home a {
   text-decoration: none;
   font-size: 0.9rem;
@@ -247,6 +281,12 @@ nav {
   box-shadow: 0 13px 21px rgb(0 0 0 / 13%);
   margin-top: -5px;
 }
+.course_box a {
+  color: var(--background_2);
+}
+.course_box a:hover {
+  text-decoration: none;
+}
 .course_box img {
   width: 100%;
   height: auto;
@@ -259,7 +299,10 @@ nav {
 }
 .course_box .details > span {
   font-size: 0.7rem;
-  color: var(--text);
+}
+
+.course_box .details h6 {
+  font-weight: 700;
 }
 .course_box .details i {
   color: var(--mark);
@@ -363,4 +406,150 @@ footer h3 {
 .footer_link a:hover {
   text-decoration: none;
   color: var(--mark);
+}
+
+/* ========================================= */
+
+.pages_home {
+}
+
+#pages_home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url(../images/c2.jpg);
+  width: 100%;
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+#pages_home h2 {
+  color: var(--background);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ==================Chourse Details page============ */
+#course_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+#course_inner .overview .course_image {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#course_inner .overview .course_head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.c_name {
+  width: 85%;
+}
+
+#course_inner .overview .course_head h2 {
+  color: var(--background_2);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#course_inner .overview .course_head .star {
+  margin: 6px 0;
+}
+.c_name .star i {
+  color: var(--mark);
+}
+.overview p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+}
+.course_head span {
+  padding: 7px 20px;
+  color: var(--background);
+  background: var(--mark);
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.overview h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--background_2);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.overview .tutor {
+  display: flex;
+  align-items: center;
+}
+
+.overview .tutor img {
+  width: 100px;
+  padding-right: 20px;
+}
+.overview .tutor h5 {
+  font-size: 1.1rem;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+}
+.learn p {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+.learn p i {
+  color: var(--mark);
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.enroll {
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+  border-radius: 11px;
+  box-shadow: 0px 20px 40px 0 rgb(11 2 55 / 11%);
+}
+.enroll h3 {
+  padding-bottom: 10px;
+}
+.enroll p {
+  font-size: 15px;
+  color: var(--text);
+  margin: 15px 0;
+}
+.enroll i {
+  color: var(--mark);
+  font-weight: 500;
+  margin-right: 18px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+.enroll_btn {
+  padding: 25px 0 20px 0;
+  margin: auto;
+  text-align: center;
+}
+.enroll_btn button {
+  font-size: 0.8rem;
+  padding: 13px 45px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--background);
+  background: var(--mark);
+  border: none;
 }
