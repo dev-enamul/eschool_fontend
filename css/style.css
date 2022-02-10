@@ -553,3 +553,194 @@ footer h3 {
   background: var(--mark);
   border: none;
 }
+
+/* =================Contact Page ============= */
+#contact {
+  padding: 8vh 0px;
+}
+#contact .getin h2 {
+  color: var(--background_2);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 0.8;
+  margin-bottom: 16px;
+}
+
+#contact .getin p {
+  color: var(--text);
+  line-height: 24px;
+  margin-bottom: 33px;
+  padding-bottom: 25px;
+}
+
+#contact .getin h3 {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.getin_details > div {
+  display: flex;
+}
+.getin_details div .get {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--mark);
+  margin-right: 20px;
+}
+.getin_details div p {
+  font-size: 14px;
+  border-bottom: none;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.pro_links i {
+  padding: 7px 10px;
+  border: 1px solid var(--text);
+  margin: 2px;
+  border-radius: 2px;
+}
+
+.form {
+  width: 100%;
+  background: var(--background_3);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form h4 {
+  font-size: 24px;
+  color: var(--background_2);
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.form p {
+  color: var(--text);
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+.form .form_row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form .form_row input {
+  width: 48%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  border: none;
+  background: var(--background);
+  color: var(--text);
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.form .form_col input,
+.form .form_col textarea {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  border: none;
+  background: var(--background);
+  color: var(--text);
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border: none;
+}
+.form button {
+  font-size: 0.9rem;
+  padding: 10px 25px;
+  background: var(--mark);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  color: var(--background);
+}
+.form input:focus,
+.form textarea:focus {
+  border: 1px solid var(--mark);
+}
+
+/* ===============blogs page=========== */
+
+.blogs {
+  display: flex;
+  align-items: center;
+  flex-basis: 400px;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+}
+.blogs img,
+.blogs div {
+  width: 300px;
+  padding: 0px 5px;
+  border-radius: 3px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.blogs h4 {
+  color: var(--background_2);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.blogs span {
+  font-size: 0.8rem;
+  color: var(--text);
+}
+.blogs p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.blogs button {
+  background: var(--mark);
+  color: var(--background);
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.category_section {
+  margin-top: 50px;
+}
+
+.category_section h4 {
+  color: var(--background_2);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+}
+
+.category_section ul {
+  list-style: none;
+  margin: -20px 0px;
+  /* padding: 10px 0px; */
+  padding: 0px;
+}
+.category_section ul li {
+  padding: 7px 0px;
+  border-top: 2px solid var(--text);
+}
+.category_section ul li:first-child {
+  border: none;
+}
+.category_section ul li a {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.category_section ul li a:hover {
+  text-decoration: none;
+  color: var(--mark);
+}
