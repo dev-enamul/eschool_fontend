@@ -6,6 +6,10 @@
   --background_2: #000;
   --background_3: #f1f1f1;
 }
+a:hover {
+  text-decoration: none;
+}
+
 .section_title {
   font-size: 30px;
   color: #333;
@@ -702,7 +706,7 @@ footer h3 {
   color: var(--text);
 }
 
-.blogs button {
+.blogs a {
   background: var(--mark);
   color: var(--background);
   font-size: 1.1rem;
@@ -743,4 +747,38 @@ footer h3 {
 .category_section ul li a:hover {
   text-decoration: none;
   color: var(--mark);
+}
+
+.single_blog {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.single_blog > img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.single_blog span {
+  font-size: 0.8rem;
+  color: var(--text);
+}
+.single_blog h4 {
+  color: var(--background_2);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.single_blog p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.single_blog a {
+  background: var(--mark);
+  color: var(--background);
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
 }
